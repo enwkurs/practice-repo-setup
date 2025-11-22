@@ -1,0 +1,148 @@
+/* ------------------ GLOBAL VARIABLES ------------------ */
+:root { 
+  /* Root colors for changing header/footer bg colors */
+  --bars-color: #23202b;
+  --bars-pad: 2rem 2rem;
+}
+
+/* ------------------ IMPORTS --------------------------- */
+@font-face {
+  font-family: NewRock;
+  src: url(/assets/fonts/NewRocker-Regular.ttf);
+}
+
+/* ------------------ GLOBAL STYLING -------------------- */
+
+/* ----- Get rid of ALL padding and margins ----- */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ----- Begone useless spaces I did not ask for ----- */
+
+body {
+  font-family: "FONTNAME";
+  background-color: #241d2e;
+}
+
+/* Link Styles */
+a {
+  color: #e99638;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: #e99638;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+/* Applies to mouse button down */
+}
+
+/* ------------------ REUSABLE CLASSES -------------------- */
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.hide {
+  display: none;
+}
+
+/* ------------------ ELEMENT GLOBAL STYLING -------------------- */
+
+section {
+  min-height: 100vh;
+}
+
+p {
+  color: #f7f3fb;
+}
+
+h1 {
+  font-family: "FONTNAME";
+  font-size: 5rem;
+  color: #1C1A23;
+}
+
+h2 {
+  font-family: "FONTNAME";
+  color: #f7f3fb;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "FONTNAME";
+  color: #f7f3fb;
+  font-size: 1.5rem;
+}
+
+/* ------------------ HEADER --------------------------- */
+.header {
+  justify-content: space-between;
+  padding: var(--bars-pad);
+  height: auto;
+
+  background-color: var(--bars-color);
+}
+
+/* ------------------ MAIN --------------------------- */
+.main {
+  flex-direction: column;
+  gap: 6rem;
+}
+
+/* ------------------ MAIN BODY -------------------- */
+/* Build as Needed */
+
+/* ------------------ FOOTER --------------------------- */
+.footer {
+  background-color: var(--bars-color);
+  padding: var(--bars-pad);
+  
+  flex-direction: column;
+  gap: .5rem;
+
+  color: #f7f3fb;
+}
+
+/* ------------------ MEDIA QUERIES --------------------------- */
+
+/* Mobile */
+@media (max-width: 500px ) {
+  body {
+    /* background-color: red; */
+    
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 501px ) and (max-width: 1023px) {
+  body {
+    /* background-color: green; */
+    
+  }
+}
